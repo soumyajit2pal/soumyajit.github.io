@@ -78,7 +78,7 @@ function alarmset()
     var selectedsec=document.getElementById("alrmsec").value;
     var selectedampm=document.getElementById("ampm").value;
     var alarmtime=addZero(selectedhour)+":"+addZero(selectedmin)+":"+addZero(selectedsec)+" "+selectedampm;
-// console.log(alarmtime);
+alert("Alarm set");
 document.getElementById("alrmhrs").disabled=true;
 document.getElementById("alrmmin").disabled=true;
 document.getElementById("alrmsec").disabled=true;
@@ -110,13 +110,13 @@ setInterval(function()
     var time = h + ":" + m + ":" + s + " " + session;
     if(alarmtime==time)
     {
-        console.log("yes");
+        //console.log("yes");
         popup();
     }
-    else
-    {
-        console.log("no");
-    }
+    // else
+    // {
+    //     console.log("no");
+    // }
 
 },1000)
 }
@@ -126,4 +126,5 @@ document.getElementById("alrmhrs").disabled=false;
 document.getElementById("alrmmin").disabled=false;
 document.getElementById("alrmsec").disabled=false;
 document.getElementById("ampm").disabled=false;
+alert("Reset Done");
 }
