@@ -82,6 +82,10 @@ function alarmset()
     var selectedampm=document.getElementById("ampm").value;
     var alarmtime=addZero(selectedhour)+":"+addZero(selectedmin)+":"+addZero(selectedsec)+" "+selectedampm;
 // console.log(alarmtime);
+document.getElementById("alrmhrs").disabled=true;
+document.getElementById("alrmmin").disabled=true;
+document.getElementById("alrmsec").disabled=true;
+document.getElementById("ampm").disabled=true;
 setInterval(function()
 {
     var date = new Date();
@@ -118,4 +122,11 @@ setInterval(function()
     }
 
 },1000)
+}
+function alarmreset()
+{
+document.getElementById("alrmhrs").disabled=false;
+document.getElementById("alrmmin").disabled=false;
+document.getElementById("alrmsec").disabled=false;
+document.getElementById("ampm").disabled=false;
 }
