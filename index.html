@@ -1,1 +1,50 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/alerm.css">
+    <script src="js/alerm.js"></script>
+</head>
+<body onload="showTime();hours()">
+    <div id="MyClockDisplay" class="clock"></div>
+    <div id="alerm_input">
+        <h2>Select alarm time</h2>
+        <label>
+            <div>
+                    <select  id="alrmhrs"></select>
+            </div>
+        </label>
+        <label>
+                <div>
+                    <select id="alrmmin"></select>
+                </div>
+        </label>
+        <label>
+                <div>
+                    <select id="alrmsec"></select>
+                </div>
+        </label>
+        <label>
+        <div>
+            <select id='ampm'>
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+        </div>
+    </label>
+    <button id="setButton" onclick="alarmset()">Set Alarm</button>
+    <button id="clearButton" onclick="alarmreset()">Clear Alarm</button> 
+</div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+           <center><img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="width:100%;height:100%;"></center>
+        <p>Medicine please take</p>
+        <button>Yes</button>
+        </div>
+    </div>
+</body>
+</html>
