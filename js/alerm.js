@@ -86,7 +86,6 @@ document.getElementById("alrmhrs").disabled=true;
 document.getElementById("alrmmin").disabled=true;
 document.getElementById("alrmsec").disabled=true;
 document.getElementById("ampm").disabled=true;
-document.getElementById.("setButton").disabled=true;
 setInterval(function()
 {
     var date = new Date();
@@ -130,5 +129,4 @@ document.getElementById("alrmhrs").disabled=false;
 document.getElementById("alrmmin").disabled=false;
 document.getElementById("alrmsec").disabled=false;
 document.getElementById("ampm").disabled=false;
-document.getElementById.("setButton").disabled=false;
 }
